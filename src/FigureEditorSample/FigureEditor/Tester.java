@@ -1,4 +1,4 @@
-package FigureEditor;
+package FigureEditorSample.FigureEditor;
 
 public class Tester {
 	public static void main(String[] args){

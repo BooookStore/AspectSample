@@ -1,6 +1,6 @@
-package FigurePositionAspect;
+package FigureEditorSample.FigurePositionAspect;
 
-import FigureEditor.FigureElement;
+import FigureEditorSample.FigureEditor.FigureElement;
 
 /**
  * FigureElementの位置が変更される際に、変更が正しいかをチェックします。

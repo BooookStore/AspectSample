@@ -1,4 +1,4 @@
-package FigureEditor;
+package FigureEditorSample.FigureEditor;
 
 import java.util.ArrayList;
 import java.util.List;
