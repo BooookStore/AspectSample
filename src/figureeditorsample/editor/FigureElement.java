@@ -1,4 +1,5 @@
-package FigureEditorSample.FigureEditor;
+package figureeditorsample.editor;
+
 
 public abstract class FigureElement {
 	

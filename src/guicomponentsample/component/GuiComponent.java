@@ -1,4 +1,5 @@
-package GuiComponentSample.GuiComponent;
+package guicomponentsample.component;
+
 
 public abstract class GuiComponent {
 

@@ -1,22 +1,23 @@
-package FigureEditorSample.FigureEditor;
+package figureeditorsample.editor;
 
-public class Point extends FigureElement{
+
+public class Line extends FigureElement {
 
 	private int _x = 0;
 	
 	private int _y = 0;
 	
-	public Point(int _x, int _y) {
+	public Line(int _x, int _y) {
 		super();
 		this._x = _x;
 		this._y = _y;
 	}
-	
+
 	public void setXY(int x,int y){
 		setX(x);
 		setY(y);
 	}
-
+	
 	@Override
 	public void setX(int x) {
 		_x = x;
@@ -26,7 +27,7 @@ public class Point extends FigureElement{
 	public void setY(int y) {
 		_y = y;
 	}
-	
+
 	@Override
 	public Integer getX() {
 		return _x;
@@ -36,5 +37,5 @@ public class Point extends FigureElement{
 	public Integer getY() {
 		return _y;
 	}
-
+	
 }

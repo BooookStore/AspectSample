@@ -1,4 +1,5 @@
-package GuiComponentSample.GuiComponent;
+package guicomponentsample.component;
+
 
 public class Tester {
 
@@ -7,7 +8,6 @@ public class Tester {
 		Button b = new Button();
 		b.setName("Button");
 		b.setHeight(100);
-		b.resetPos();
 		
 		Scrollbar sc = new Scrollbar();
 		sc.moveThumb();

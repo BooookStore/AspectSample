@@ -1,6 +1,8 @@
-package FigureEditorSample.FigurePositionAspect;
+package figureeditorsample.aspect;
+import figureeditorsample.editor.FigureElement;
 
-import FigureEditorSample.FigureEditor.FigureElement;
+
+
 
 /**
  * FigureElementの位置が変更される際に、ログを出力します。

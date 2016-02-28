@@ -1,4 +1,5 @@
-package FigureEditorSample.FigureEditor;
+package figureeditorsample.editor;
+
 
 import java.util.ArrayList;
 import java.util.List;
