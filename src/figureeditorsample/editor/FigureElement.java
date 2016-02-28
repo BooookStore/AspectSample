@@ -13,6 +13,10 @@ public abstract class FigureElement {
 
 	public abstract Integer getY();
 	
+	public void make(){
+		System.out.println("FigureElement is made.");
+	}
+	
 	@Override
 	public String toString(){
 		return "[" + getX() + "," + getY() + "]";
