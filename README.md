@@ -6,7 +6,11 @@ AspectJを使用した練習用プログラムです。
 ##Requirement
 
 - Eclipse (Luna 4.4.2)
-- AJDT
+- AspectJ 1.8.6
+
+##Coment
+野田研の方へ<br>
+実演したソースコードは src/guicomponentsample です。
 
 ##Author
 Honya Ryousuke
