@@ -10,7 +10,7 @@ AspectJを使用した練習用プログラムです。
 
 ##Coment
 野田研の方へ<br>
-実演したソースコードは src/guicomponentsample です。
+発表用ソースコードは src/guicomponentsample です。
 
 ##Author
 Honya Ryousuke
