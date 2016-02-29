@@ -11,6 +11,9 @@ public class Tester {
 		Line l = new Line();
 		l.setP1(10, 10);
 		
+		TurnLine tl = new TurnLine();
+		tl.setP3(20, 20);
+		
 		Point p = new Point();
 		p.setX(100);
 		

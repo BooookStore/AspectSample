@@ -3,6 +3,11 @@ package changemonitoringsample.aspect;
 import changemonitoringsample.figures.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * FigureElementの位置変更を察知します。
+ * @author honyaryousuke
+ *
+ */
 public aspect MoveTracking {
 	
 	private static AtomicBoolean dirty = new AtomicBoolean();
