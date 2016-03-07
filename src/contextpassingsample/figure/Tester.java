@@ -1,6 +1,5 @@
-package contextpassingsample.aspect;
+package contextpassingsample.figure;
 
-import contextpassingsample.figure.ColorControllingClient;
 
 public class Tester {
 
