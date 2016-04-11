@@ -19,7 +19,7 @@ public aspect LineLogger {
 	/**
 	 * Lineのgetter,setterメソッドが呼び出される
 	 */
-	pointcut recivedCall() : target(pointcutsample.figures.Line) && (call(* set*(..)) || call(* get*()));
+	pointcut recivedCall() : this(pointcutsample.figures.Line) && (call(* set*(..)) || call(* get*()));
 	
 	before() : recivedCall() && !adviceexecution(){
 		System.out.println("Target : " + thisJoinPoint.getTarget());
