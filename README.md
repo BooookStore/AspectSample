@@ -8,9 +8,9 @@ AspectJを使用した練習用プログラムです。
 - Eclipse (Luna 4.4.2)
 - AspectJ 1.8.6
 
-##Coment
-野田研の方へ<br>
-発表用ソースコードは src/guicomponentsample です。
+##Check
+###call_vs_execution
+executionとwithincodeを組み合わせたポイントカットがウェーブしてくれない問題。
 
 ##Author
 Honya Ryousuke
