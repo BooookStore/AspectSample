@@ -4,27 +4,31 @@ import call_vs_execution.tester.Tester;
 
 public aspect TesterLogger {
 
-//	/**
-//	 * executionとwithincodeを組み合わせたポイントカットの作成例。
-//	 * Tester.methodA内にて、Tester.methodBが呼ばれた時にアドバイスをウェーブする。
-//	 */
-//	pointcut logTarget() : execution(void Tester.methodB()) && withincode(void Tester.methodB());
-//	
-//	before() : logTarget() {
-//		System.out.print("\t[execution と within　の組み合わせ]");
-//		System.out.println("\t" + thisJoinPoint.getSourceLocation().getLine());
-//	}
+	/**
+	 * Tester.methodCの再帰呼び出しにウェーブ。
+	 */
+	before() : call(void Tester.methodC(*)) && withincode(void Tester.methodC(*)) {
+		System.out.println("\t" + thisJoinPoint.toLongString());
+	}
 	
 	/**
-	 * executionを使ったポイントカットの例。
-	 * 
+	 * ???なぜかウェーブしてくれない。
+	 * リファレンスを見る限りではexecutionポイントカットと同じなはず。
 	 */
-	pointcut logTargetSecond() : execution(void Tester.methodB());
+	before() : execution(void Tester.methodB()) && withincode(void Tester.methodB()) {
+		System.out.println("\t" + thisJoinPoint.toLongString());
+	}
 	
-	before() : logTargetSecond() {
+	/**
+	 * Tester.methodBの実行時にウェーブ。
+	 */
+	before() : execution(void Tester.methodB()) {
 		System.out.println("\t" +thisJoinPoint.toLongString());
 	}
 	
+	/**
+	 * Tester.methodBの呼び出し時にウェーブ。
+	 */
 	before() : call(void Tester.methodB()) {
 		System.out.println("\t" +thisJoinPoint.toLongString());
 	}
